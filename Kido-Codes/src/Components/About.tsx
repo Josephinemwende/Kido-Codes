@@ -1,54 +1,62 @@
-import kidLearningOnline from '../assets/kid-learning-online.jpg';
-import MathImage from '../assets/Maths.jpg';
-import artImage from '../assets/art.jpg';
-import codeImage from '../assets/code.jpg';
+import Owl from '../assets/Owl.png';
+import { BookOpen, Gamepad2, Users } from 'lucide-react';
 const About = () => {
     return(
-        <section id="about" className="relative py-15 bg-gray-100 overflow-hidden">
-            <img src={MathImage} alt="Math" className="absolute bottom-0 right-10 w-20 h-20 rounded-full animate-bounce" style={{ animationDuration: "20s" }}/>
-            <img src={artImage} alt="Art" className="absolute top-48 right-80 w-20 h-20 rounded-full animate-bounce" style={{ animationDuration: "20s" }}/>
-            <img src={codeImage} alt="Code" className="absolute top-10 right-40 w-20 h-20 rounded-full animate-bounce" style={{ animationDuration: "20s" }}/>
-            
-            <div className="container mx-auto px-6 lg:px-16 grid grid-cols-1 lg:grid-cols-2 items-center">
+        <section className="about py-12 px-4 sm:px-6 lg:px-20">   
+            <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-[2fr_3fr] gap-8 lg:gap-10 items-center">
                 {/* Image Section */}
-                <div className="flex justify-center lg:justify-start h-full">
-                    <img src={kidLearningOnline} alt="Kid learning online" className="rounded-2xl shadow-lg w-full object-cover max-w-md transform hover:scale-105 transition-transform duration-300"/>
+                <div className="flex justify-center lg:justify-start lg:mt-8">
+                    <img src={Owl} alt="Owl Mascot" className="w-full max-w-[280px] sm:max-w-[320px] md:max-w-[360px] lg:max-w-[400px] transform hover:scale-105 transition-transform duration-300"/>
                 </div>
 
                 {/* Text Section */}
-                <div className="text-center lg:text-left space-y-6">
-                    <h1 className="text-4xl font-bold text-gray-800 mb-4">About Us</h1>
-
-                    <blockquote className="text-xl italic text-gray-600 border-l-4 border-green-500 pl-4">
-                        “The future belongs to creators. Through Kido-Codes, we’re empowering kids to think
+                <div>
+                    <h4 className="inline-block bg-green-600/10 text-green-700 px-4 py-1 rounded-full text-sm font-semibold animate-fade-in mb-2 uppercase">
+                        About Us
+                    </h4>
+                    <h2 className="mt-2 text-3xl md:text-4xl font-bold text-gray-800">
+                        Why Choose Kiddo Codes?
+                    </h2>
+                    <p className="mt-4 text-green-600 font-bold leading-relaxed">
+                        Learning should feel like an adventure, not a chore.</p>
+                    <p className="mt-4 text-gray-600 leading-relaxed">
+                        We're not your typical tutoring service. Our certified instructors don't follow rigid curriculums. Instead, they discover what makes each child's eyes light up, then build personalized learning paths around those passions. 
+                        Whether your child dreams in pixels, thinks in algorithms, or expresses themselves through art, we meet them exactly where they are.
+                    </p>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
+                        <div className="bg-green-600/10 rounded-2xl p-6 shadow-md shadow-green-600/10 hover:shadow-xl transition transform hover:scale-105 transition-transform duration-300">
+                            <div className="w-12 h-12 bg-green-600 rounded-xl flex items-center justify-center mb-4">
+                                <BookOpen className="w-6 h-6 text-white" />
+                            </div>
+                            <h3 className="text-lg font-bold text-gray-900 mb-2">Personalized Learning</h3>
+                            <p className="text-gray-600 text-base leading-relaxed">
+                                We offer customized learning tailored to each child's unique needs abilities and interests personalized.
+                            </p>
+                        </div>
+                        <div className="bg-green-600/10 rounded-2xl p-6 shadow-md shadow-green-600/10 hover:shadow-xl transition transform hover:scale-105 transition-transform duration-300">
+                            <div className="w-12 h-12 bg-green-600 rounded-xl flex items-center justify-center mb-4">
+                                <Gamepad2 className="w-6 h-6 text-white" />
+                            </div>
+                            <h3 className="text-xl font-bold text-gray-900 mb-2">Educational Games</h3>
+                            <p className="text-gray-600 text-base leading-relaxed">
+                                Our platform features educational games and activities designed to make learning enjoyable and engaging.
+                            </p>
+                        </div>
+                        <div className="bg-green-600/10 rounded-2xl p-6 shadow-md shadow-green-600/10 hover:shadow-xl transition transform hover:scale-105 transition-transform duration-300">
+                            <div className="w-12 h-12 bg-green-600 rounded-xl flex items-center justify-center mb-4">
+                                <Users className="w-6 h-6 text-white" />
+                            </div>
+                            <h3 className="text-xl font-bold text-gray-900 mb-2">Expert Tutors </h3>
+                            <p className="text-gray-600 text-base leading-relaxed">
+                                Our certified instructors have both technical expertise and experience working with children. They know how to make complex concepts simple and fun.
+                            </p>
+                        </div>
+                    </div>
+                    <blockquote className="mt-10 text-lg italic text-gray-600 border-l-4 border-green-500 pl-4">
+                        “The future belongs to creators. Through Kiddo-Codes, we’re empowering kids to think
                         critically, express creatively, and code confidently — one lesson at a time.”
                     </blockquote>
-
-                    <span className="block font-semibold text-green-700 text-right">— Maureen Mwenswa, Founder</span>
-
-                    <p className="text-gray-700 leading-relaxed">
-                        At <span className="font-semibold text-green-600">Kido-Codes</span>, we believe learning should be fun,
-                        creative, and empowering. Our mission is to help kids explore the worlds of Math, Art, and
-                        Coding through engaging lessons and interactive video content.
-                    </p>
-
-                    <p className="text-gray-700 leading-relaxed">
-                        We combine expert tutoring with hands-on learning — giving every child the chance to think
-                        logically, create boldly, and express themselves confidently. From colorful art tutorials
-                        to exciting coding projects and math challenges, Kido-Codes makes education feel like an
-                        adventure.
-                    </p>
-
-                    <p className="text-gray-700 leading-relaxed">
-                        Whether your child is just starting out or ready to level up, our platform offers
-                        personalized learning paths, certified tutors, and a library of fun YouTube videos designed
-                        to inspire curiosity and confidence.
-                    </p>
-
-                    <p className="text-gray-700 leading-relaxed">
-                        Because at <span className="font-semibold text-green-600">Kido-Codes</span>, we’re not just teaching
-                        skills — we’re nurturing the next generation of thinkers, creators, and innovators.
-                    </p>
+                    <span className="block mt-2 font-semibold text-green-700 text-right">— Maureen Mwenswa, Founder</span>
                 </div>
             </div>
         </section>

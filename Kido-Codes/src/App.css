@@ -11,6 +11,8 @@
     font-display: swap;
 }
 body{
-    background: linear-gradient(to right, #BCE9BD 0%, #CFF3D3 50%, #E3F8E4 100%);
     font-family: 'Baloo 2', cursive;
+}
+#Hero-Section, #courses {
+    background: linear-gradient(to right, #BCE9BD 0%, #CFF3D3 50%, #E3F8E4 100%);
 }
