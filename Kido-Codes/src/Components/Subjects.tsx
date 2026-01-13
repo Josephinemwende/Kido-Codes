@@ -68,7 +68,7 @@ const Subjects = () => {
         }
     }, [currentSlide, isPaused]);
     return(
-        <section id="courses" className="py-20 px-4 sm:px-6 lg:px-20">
+        <section id="courses" className="py-20 px-4 sm:px-6 lg:px-20  bg-green-600/10">
             <div className="max-w-7xl mx-auto">
                 <div className="text-left mb-16">
                     <h4 className="inline-block bg-green-600/10 text-green-700 px-4 py-1 rounded-full text-sm font-semibold animate-fade-in mb-2 uppercase">Subjects covered</h4>
