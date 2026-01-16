@@ -19,23 +19,7 @@ const Testimonials = () => {
         </p>
 
         {/* Testimonials Grid */}
-        <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-          <TestimonialCard
-            quote="My son learned to code while having fun!"
-            name="Sarah M."
-            role="Parent"
-          />
-          <TestimonialCard
-            quote="The lessons are super engaging and easy to follow."
-            name="James L."
-            role="Parent"
-          />
-          <TestimonialCard
-            quote="I love building games with Kiddo Codes!"
-            name="Ava, 9"
-            role="Student"
-          />
-        </div>
+        
       </div>
     </section>
   );
